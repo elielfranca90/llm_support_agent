@@ -103,7 +103,6 @@ vectorstore = FAISS.from_documents(documents, embeddings)
 model = config["model"]["name"]
 chat = ChatOpenAI(model=model, temperature=0)
 
-
 # Definir o comportamento do agente
 system_message = SystemMessage(content=(
     "Você é um assistente virtual especializado no atendimento ao cliente para uma renomada marca de relógios. "
@@ -115,6 +114,10 @@ system_message = SystemMessage(content=(
 
 # Cria retriever a partir do vectorstore
 retriever = vectorstore.as_retriever()
+
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({"status": "ok"})
 
 
 # endpoint padrão que recebe pergunta e client_id
