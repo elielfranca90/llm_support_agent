@@ -1,4 +1,4 @@
 api_key:
-  key: ""
+  key: "model-api-key"  # Your OpenAI API key
 model:
-  name:   "gpt-4o"    # "gpt-4o"  "gpt-3.5-turbo"  "o3-mini" "o1-mini"
+  name:   "model name"  # The name of the model you want to use
