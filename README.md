@@ -52,14 +52,14 @@ model:
   name: "gpt-4o-mini"
 ```
 
-2. Start the Flask backend:
+2. Start the Flask backend in a nohup session:
 ```bash
-python app.py
+nohup python3 -m app.py &
 ```
 
-3. In a new terminal, start the Streamlit frontend:
+3. In a new terminal, start the Streamlit frontend in a nohup session:
 ```bash
-streamlit run chat.py
+nohup python3 -m streamlit run chat.py
 ```
 
 4. Access the chat interface at `http://localhost:8501`
