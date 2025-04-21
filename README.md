@@ -52,14 +52,14 @@ model:
   name: "gpt-4o-mini"
 ```
 
-2. Start the Flask backend:
+2. Start the Flask backend in a nohup session:
 ```bash
-python app.py
+nohup python3 -m app.py &
 ```
 
-3. In a new terminal, start the Streamlit frontend:
+3. In a new terminal, start the Streamlit frontend in a nohup session:
 ```bash
-streamlit run chat.py
+nohup python3 -m streamlit run chat.py
 ```
 
 4. Access the chat interface at `http://localhost:8501`
@@ -103,3 +103,9 @@ Key Component Interactions:
 4. LangChain combines context, conversation history, and retrieved information
 5. OpenAI model generates appropriate response
 6. Response is stored in conversation history and displayed to user
+
+
+Dicas para rodar
+1. É necessário atualizar os pacotes
+2. É necessário criar um venv, ativar e instalar os requirements.txt
+3. É necessário atualizar o langchain: pip install --upgrade langchain
