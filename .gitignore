@@ -1,0 +1,41 @@
+# Excluir o ambiente virtual
+venv/
+
+# Excluir arquivos de banco de dados locais
+*.db
+
+# Excluir arquivos de log ou cache
+*.log
+*.cache
+
+# Excluir arquivos de backup
+*.bak
+
+# Excluir arquivos de build ou distribuição
+dist/
+build/
+
+# Excluir arquivos de IDEs ou editores
+__pycache__/
+*.py[cod]
+*.swp
+*.swo
+*.swn
+
+# Excluir arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Excluir arquivos de configuração locais
+.env
+local_config.yaml
+
+# Manter os seguintes arquivos
+!README.md
+!requirements.txt
+!config.yaml
+!app.py
+!chat.py
+!cira_db.py
+!relogio.jpg
+!documents/
